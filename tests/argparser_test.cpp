@@ -38,7 +38,7 @@ TEST(ArgParserTestSuite, ShortNameTest) {
 
 TEST(ArgParserTestSuite, DefaultTest) {
   ArgParser parser("My Parser");
-  parser.AddStringArgument("param1").DefaultString("value1");
+  parser.AddStringArgument("param1").Default("value1");
 
   ASSERT_TRUE(parser.Parse(SplitString("app")));
   ASSERT_EQ(parser.GetStringValue("param1"), "value1");

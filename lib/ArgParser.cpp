@@ -196,7 +196,7 @@ ArgParser& ArgParser::Default(bool default_flag) {
   }
 }
 
-ArgParser& ArgParser::DefaultString(const std::string& default_value) {
+ArgParser& ArgParser::Default(const char* default_value) {
   if (!arguments_.empty()) {
     auto& lastArg = arguments_.back();
     if (!lastArg.is_flag) {

@@ -70,7 +70,7 @@ class ArgParser {
   bool Parse(const std::vector<std::string>& args);
 
   // Установка значения по умолчанию для аргумента
-  ArgParser& DefaultString(const std::string& default_value);
+  ArgParser& Default(const char* default_value);
   ArgParser& Default(bool default_flag);
 
   // Указание, что аргумент может принимать несколько значений
